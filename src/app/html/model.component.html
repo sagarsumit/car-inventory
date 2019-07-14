@@ -1,0 +1,20 @@
+<button class="btn btn-warning" (click)="openModal('model')">Add new model</button>
+<br>
+<br>
+<h3>Car Model Table</h3>
+<table id="car-model-table" class="table table-striped" [mfData]="car-inventory-table" #mf="mfDataTable" [mfRowsOnPage]="3">
+  <thead>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Manufacturer</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let currentModel of modelList">
+      <td>{{currentModel.model_name}}</td>
+      <td>{{currentModel.reg_time}}</td>
+    </tr>
+  </tbody>
+</table>
+{{errorMessage}}

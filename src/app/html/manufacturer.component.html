@@ -1,0 +1,40 @@
+<button class="btn btn-danger" (click)="openModal('manufacturer')">Add new manufacturer</button>
+<br>
+<br>
+<h3>Car Manufacturer Table</h3>
+<table class="table table-striped" [mfData]="car-inventory-table" #mf="mfDataTable" [mfRowsOnPage]="3">
+  <thead>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Manufacturer</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test</td>
+      <td>Test</td>
+      <td>Test</td>
+    </tr>
+    <tr>
+        <td>Test</td>
+        <td>Test</td>
+        <td>Test</td>
+      </tr>
+      <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+      </tr>
+      <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+      </tr>
+      <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+      </tr>
+  </tbody>
+</table>

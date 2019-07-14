@@ -1,0 +1,52 @@
+<button class="btn btn-primary" (click)="openModal('inventory')">Add new inventory</button>
+<br>
+<br>
+<h3>Car Inventory Table</h3>
+<table class="table table-striped" [mfData]="car-inventory-table" #mf="mfDataTable" [mfRowsOnPage]="3">
+  <thead>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Manufacturer</th>
+      <th>Model</th>
+      <th>Count</th>
+      <th>Sold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test</td>
+      <td>Test</td>
+      <td>Test</td>
+      <td>Test</td>
+      <td>Test</td>
+    </tr>
+    <tr>
+        <td>Test</td>
+        <td>Test</td>
+        <td>Test</td>
+        <td>Test</td>
+        <td>Test</td>
+      </tr>
+      <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+      </tr>
+      <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+      </tr>
+      <tr>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+            <td>Test</td>
+      </tr>
+  </tbody>
+</table>

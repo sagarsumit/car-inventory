@@ -1,0 +1,89 @@
+<div id="header">
+
+  <div class="main-page">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="header-text-color hide-underline">
+              <i class="fa fa-car" id="header-logo"></i>&nbsp;&nbsp;
+              <span id="header-logo-name">Car Inventory</span>
+            </div>
+          </div>
+      
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <ul id="header-menu">
+              <li><a href="/inventory">Inventory</a></li>
+              <li><a href="/manufacturer">Manufacturer</a></li>
+              <li><a href="/model">Model</a></li>
+            </ul>
+          </div>
+    </div>
+    
+  </div>
+
+</div>
+
+<div class="main-page">
+  <div class="content-margin"></div>
+  <router-outlet></router-outlet>
+</div>
+
+<div id="open-modal-inventory">
+  <div class="main-page">
+        <form action="test.php" method="POST" id="add-inventory-form">
+          <div class="form-group">
+            <label class="form-label">ADD NEW INVENTORY</label>
+          </div>
+          <div class="form-group">
+              <label>Select Manufacturer</label>&nbsp;&nbsp;
+              <select>
+                  <option>Check1</option>
+                  <option>Check2</option>
+                  <option>check3</option>
+              </select>
+          </div>
+          
+          <div class="form-group">
+              <label>Select Model</label>&nbsp;&nbsp;
+              <select>
+                  <option>Check1</option>
+                  <option>Check2</option>
+                  <option>check3</option>
+              </select>
+          </div>
+      
+          <div class="form-group">
+            <input type="submit" class="btn btn-danger"/>&nbsp;&nbsp;
+            <input type="button" class="btn btn-primary" (click)="closeModal('inventory')" value="Close"/>
+          </div>
+        </form>
+
+        <form action="test1.php" method="POST" id="add-manufacturer-form">
+            <div class="form-group">
+              <label class="form-label">ADD NEW MANUFACTURER</label>
+            </div>
+            <div class="form-group">
+                <label>Enter Manufacturer</label>&nbsp;&nbsp;
+                <input type="text" />
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-danger"/>&nbsp;&nbsp;
+              <input type="button" class="btn btn-primary" (click)="closeModal('manufacturer')" value="Close"/>
+            </div>
+        </form>
+
+        <form action="test.php" method="POST" id="add-model-form">
+            <div class="form-group">
+              <label class="form-label">ADD NEW MODEL</label>
+            </div>
+            <div class="form-group">
+                <label>Enter Model</label>&nbsp;&nbsp;
+                <input type="text" />
+            </div>
+          
+            <div class="form-group">
+              <input type="submit" class="btn btn-danger"/>&nbsp;&nbsp;
+              <input type="button" class="btn btn-primary" (click)="closeModal('model')" value="Close" />
+            </div>
+        </form>
+  </div>
+</div>
